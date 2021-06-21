@@ -1,0 +1,19 @@
+mat-card {
+    width: 90%;
+    margin: 6px;
+    float: left;
+    .subtitle {
+        color: var(--dark-grey);
+        margin: 0px;
+    }
+    .codu-image {
+        background-image: url("./../../assets/codu.jpg");
+        background-size: cover;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+    }
+    .subtitle-image {
+        margin-bottom: 4px;
+    }
+}

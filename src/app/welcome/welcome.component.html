@@ -1,0 +1,76 @@
+<div class="profile-content">
+    <div class="profile-content__container" fxLayout.gt-sm="row" fxLayout="column">
+        <div fxFlex fxLayoutAlign="center center" fxHide.gt-sm>
+            <div class="avatar"></div>
+        </div>
+        <div class="profile-content__container-desc">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <p class="hello">Hello</p>
+                <h1>I'm Devan Madlani</h1>
+                <div>Frontend Developer</div>
+                <p>I am self motivated Front end developer, Looking for new challenges, able to work well under pressure
+                    and
+                    adhere to the strict deadlines</p>
+                <a color="primary" mat-raised-button href="../../assets/Devan's-Resume.pdf" target="_blank">Download CV</a>
+            </div>
+        </div>
+        <div fxFlex fxLayoutAlign="center center" fxHide.lt-md>
+            <div class="avatar"></div>
+        </div>
+    </div>
+    <div class="profile-content__about" fxLayout.gt-sm="row" fxLayout="column">
+        <div>
+            <div class="about"></div>
+        </div>
+        <div>
+            <div fxHide.lt-md class="profile-content__about-det">
+                <mat-tab-group>
+                    <mat-tab label="EXPERIENCE">
+                        <app-experience></app-experience>
+                    </mat-tab>
+                    <mat-tab label="ACHIEVEMENTS">
+                        <app-achivement></app-achivement>
+                    </mat-tab>
+                    <mat-tab label="SKILLS">
+                        <app-skills></app-skills>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+            <div fxHide.gt-sm class="dropdown-det">
+                <mat-accordion>
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                EXPERIENCE
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <app-experience></app-experience>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                ACHIEVEMENTS
+                            </mat-panel-title>
+                            <mat-panel-description>
+
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <app-achivement></app-achivement>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                SKILLS
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <app-skills></app-skills>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </div>
+        </div>
+    </div>
+</div>

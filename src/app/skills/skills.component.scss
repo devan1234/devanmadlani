@@ -1,0 +1,16 @@
+.skill-content {
+  width: 90%;
+  .skill-bubble {
+    background-color: var(--primary);
+    margin: 8px;
+    width: auto;
+    float: left;
+    min-width: 100px;
+    min-height: 33px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    color: var(--light-text);
+    border-radius: 15px;
+  }
+}

@@ -1,0 +1,75 @@
+.profile-content {
+  margin: 0 auto;
+  width: 95%;
+  @media (min-width: 959px) {
+    &__container {
+      margin-top: 100px;
+    }
+  }
+
+  &__container {
+    &-desc {
+      max-width: 400px;
+      margin: 0 auto;
+      .hello {
+        margin-left: -209px;
+      }
+      h1 {
+        margin-top: -10px;
+        line-height: 1.35em;
+      }
+    }
+  }
+
+
+
+  &__about {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    &-det {
+      margin-left: 24px;
+    }
+    .dropdown-det {
+      margin-top: 16px;
+    }
+  }
+  @media (min-width: 959px) {
+    &__about {
+      margin-top: 150px;
+    }
+  }
+
+  .avatar {
+    background-image: url("./../../assets/devan.png");
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+  }
+  p {
+    color: var(--dark-grey);
+  }
+
+  .about {
+    background-image: url("./../../assets/work.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  @media (min-width: 959px) {
+    .about {
+      width: 250px;
+    }
+  }
+
+}
+
+@media (min-width: 959px) {
+  .profile-content {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
